@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+
+    <item android:id="@+id/menu_search"
+        android:title="Search"
+        android:orderInCategory="102"
+        app:showAsAction="always|withText"
+        app:actionLayout="@layout/custom_layout_actionbar" />
+    <!--
+        actionLayout을 활용하여 맞춤형으로 제작
+    -->
+
+
+    <item android:id="@+id/menu_refresh"
+        android:title="Refresh"
+        android:icon="@drawable/refresh"
+        android:orderInCategory="101"
+        app:showAsAction="always" />
+
+
+
+    <item android:id="@+id/menu_settings"
+        android:title="Settings"
+        android:icon="@drawable/settings"
+        android:orderInCategory="103"
+        app:showAsAction="never" />
+
+</menu>
